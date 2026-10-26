@@ -16,13 +16,13 @@ importers:
         version: 1.1.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.10)
       prettier-plugin-tailwindcss:
         specifier: ^0.8.1
-        version: 1.8.1(prettier-plugin-astro@1.1.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.10))(prettier@3.9.10)
+        version: 0.8.1(prettier-plugin-astro@1.1.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.10))(prettier@3.9.10)
       turbo:
         specifier: ^2.11.10
         version: 2.11.10
       typescript:
-        specifier: ~6.0.2
-        version: 6.0.3
+        specifier: ~7.0.2
+        version: 7.0.2
 
   apps/web:
     dependencies:
@@ -50,7 +50,7 @@ importers:
     devDependencies:
       '@astrojs/check':
         specifier: ^0.9
-        version: 0.9.11(@emnapi/runtime@1.11.3)(prettier-plugin-astro@1.1.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(prettier@3.9.10))(prettier@3.9.10)(typescript@6.0.3)
+        version: 0.9.11(@emnapi/runtime@1.11.3)(prettier-plugin-astro@1.1.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(prettier@3.9.10))(prettier@3.9.10)(typescript@7.0.2)
       '@eslint/js':
         specifier: ^10
         version: 10.0.1(eslint@10.13.0(jiti@2.7.0))
@@ -73,11 +73,11 @@ importers:
         specifier: ^17
         version: 17.13.0
       typescript:
-        specifier: ~6.0.2
-        version: 6.0.3
+        specifier: ~7.0.2
+        version: 7.0.2
       typescript-eslint:
         specifier: ^8
-        version: 8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)
+        version: 8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@7.0.2)
 
   packages/ui:
     dependencies:
@@ -86,7 +86,7 @@ importers:
         version: 19.3.1
       react-dom:
         specifier: ^19.3.1
-        version: 20.3.1(react@19.3.1)
+        version: 19.3.1(react@19.3.1)
       zod:
         specifier: ^4.6.7
         version: 4.6.7
@@ -99,7 +99,7 @@ importers:
         version: 4.3.3(vite@8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1))
       '@turbo/gen':
         specifier: ^2.11.10
-        version: 3.11.10(@types/node@24.19.2)
+        version: 2.11.10(@types/node@24.19.2)
       '@types/node':
         specifier: ^24
         version: 24.19.2
@@ -125,11 +125,11 @@ importers:
         specifier: ^4
         version: 4.3.3
       typescript:
-        specifier: ~6.0.2
-        version: 6.0.3
+        specifier: ~7.0.2
+        version: 7.0.2
       typescript-eslint:
         specifier: ^8
-        version: 8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)
+        version: 8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@7.0.2)
 
 packages:
 
@@ -290,7 +290,7 @@ packages:
       prettier-plugin-astro: '>=0.11.0'
     peerDependenciesMeta:
       prettier:
-        optional: false
+        optional: true
       prettier-plugin-astro:
         optional: true
 
@@ -370,11 +370,6 @@ packages:
   '@babel/helpers@7.29.7':
     resolution: {integrity: sha512-1k2lAGRMfHTcwuNYcCNUmaUffmQv8KWMfh2iJUUeRlwlwH4FdNG7mfPI10NPfLHJFThE4Tyr4mv7kTNZOiPuBg==}
     engines: {node: '>=6.9.0'}
-
-  '@babel/parser@7.29.7':
-    resolution: {integrity: sha512-hnORnjP/1P/zFEndoeX+n+t1RwWRJiJpM/jO7FW32Kn9r5+sJB2JWOdYo4L6k78j15eCwY3Gm/7364B1EMwtNg==}
-    engines: {node: '>=6.0.0'}
-    hasBin: true
 
   '@babel/parser@7.29.8':
     resolution: {integrity: sha512-E8lTAYNB1KW+FH+VGJuZM1ioAx2E6oVlvQFRrf5P8ZZmsiJXYAD9vTFV7yyEURNzgh1dFqMZuO6tUwcARbqFCA==}
@@ -936,7 +931,7 @@ packages:
       '@types/node': '>=18'
     peerDependenciesMeta:
       '@types/node':
-        optional: false
+        optional: true
 
   '@inquirer/figures@1.0.15':
     resolution: {integrity: sha512-t2IEY+unGHOzAaVM5Xx6DEWKeXlDDcNPeDyUpsRc6CUhBfU3VQOEl+Vssh7VNp1dR8MdUJBWhuObjXCsVpjN5g==}
@@ -1410,6 +1405,126 @@ packages:
     resolution: {integrity: sha512-zozlN0UA32bSG2zkKAgQyRYSbEISVoyU6vvkKYo2aSny74D8Jh4e+POkJ6Lk0dlezZi5x7TtD+88Xb06IB8nhg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  '@typescript/typescript-aix-ppc64@7.0.2':
+    resolution: {integrity: sha512-MTKKkWB7p/0E9xi1d1tHtZ5PiLkGEMIq88pK2CubZjOsLtYTLqhgIgi6zepFa+9GHZ6h05NMCkQxGKiPXMxXtQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [ppc64]
+    os: [aix]
+
+  '@typescript/typescript-darwin-arm64@7.0.2':
+    resolution: {integrity: sha512-gowzar9MwS/aRWp6f3a4KUqzRjAZjOsmGNCM6LcTgXum+dBfgsBVMN+AgvOCCbguXyick6LJhpBszxMebJ8syA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@typescript/typescript-darwin-x64@7.0.2':
+    resolution: {integrity: sha512-SZ9xZInqApNlNGc9s0W1VSsktYSOe9cFqNOIqmN1Gs8SmkjKZYFt017G4VwPxASInODuAdbTW7sXiFUf893RgA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@typescript/typescript-freebsd-arm64@7.0.2':
+    resolution: {integrity: sha512-W5NH4y/J0plIIS5b2xvTEkU7JFxyqdMAOgf+Ilhl0vHQXKO5dZoxd+C/jEtq56c4F3wk71RB4BMRQ2XdI+bwYQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [freebsd]
+
+  '@typescript/typescript-freebsd-x64@7.0.2':
+    resolution: {integrity: sha512-UMGDx5sTpzNw3WiPebH7l90IWfJggEd+egHt/q6p7/Cm3zqoV7VxkGXt+3DxPIw8CcmvAB0j3sVVfbhX+M4Tpw==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [freebsd]
+
+  '@typescript/typescript-linux-arm64@7.0.2':
+    resolution: {integrity: sha512-Qh4eU4/y3yDjnfjjyPYihMj5/ODIlmt+Bzu17OI+fiSRDW57QmU5SiN63exPRNJPKUzcc1INa1NXdrJ+MqHjUQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@typescript/typescript-linux-arm@7.0.2':
+    resolution: {integrity: sha512-gffT3xPz9sR7j/YJExkyPntrI0P2EP9XbOyWzth2/Gs0RstK+90RBcO0ncXoXy/beYll1SXw846Nf2zdnEz0QQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm]
+    os: [linux]
+
+  '@typescript/typescript-linux-loong64@7.0.2':
+    resolution: {integrity: sha512-uEHck9i8hoAzXPiYRib1O7miOnz23SxIeVl6F4LXox+qov1K35jHcEW6VHKvZI+pyvl7fZEP4MCU5LYvIq1GuQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [loong64]
+    os: [linux]
+
+  '@typescript/typescript-linux-mips64el@7.0.2':
+    resolution: {integrity: sha512-R4KvAMnE43W5Qeqb0Ly56O3mWMWIAgsMyz36DCaycd5nbg/9kzm0liw3JocfRqyJY0KPmzFjbswozXyW0DnIYA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [mips64el]
+    os: [linux]
+
+  '@typescript/typescript-linux-ppc64@7.0.2':
+    resolution: {integrity: sha512-DORx5b3sd/4S7eayxm4FQv+A7CrkUIGRaHiwI8oiHTAI1fAPWhF4J0vAlkC8biAlHSVVwxMQ3tjZ2/DVbnQiiA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [ppc64]
+    os: [linux]
+
+  '@typescript/typescript-linux-riscv64@7.0.2':
+    resolution: {integrity: sha512-wf0jqEDOjrPRnKwYRyyJDRo11KMbvMFrU+q4zqKyChODBzvlkbhNQfKvLxQCcwTpdDaXSHZTVuh0JoCrKCUMHQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [riscv64]
+    os: [linux]
+
+  '@typescript/typescript-linux-s390x@7.0.2':
+    resolution: {integrity: sha512-IkwJc3L7yhytWd/ewjyxNDfOmswCm9GWMJT/ue/dU4aZNbwZeYAetq42VyLmsmSjvoX7z74X6ZaYCtzAr0EuGw==}
+    engines: {node: '>=16.20.0'}
+    cpu: [s390x]
+    os: [linux]
+
+  '@typescript/typescript-linux-x64@7.0.2':
+    resolution: {integrity: sha512-EYdf2cNg7rgCWJnxCdJ+F3V39O8ihb37eHAu1LK8oAFizgTQbPOK7zHHXbPt8rX24COqODXeI3sIf0fCXG7H/A==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [linux]
+
+  '@typescript/typescript-netbsd-arm64@7.0.2':
+    resolution: {integrity: sha512-+polYF4MF04aPpO5FTkHran9yUQDSXqy5GiSDKpsll5jy3l3+g9QLhpf39T+ePtefhXLOGrLl0QIjkQP6VnelA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [netbsd]
+
+  '@typescript/typescript-netbsd-x64@7.0.2':
+    resolution: {integrity: sha512-8YIT0EHM/3dq10ZOVF/A7pc/YSMtbcecct4rWtexrnSCHOPcpC2KTLXfTCR6vDpnSiY12heNb1GiN/wu+T/FyA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [netbsd]
+
+  '@typescript/typescript-openbsd-arm64@7.0.2':
+    resolution: {integrity: sha512-APT8+ClYnuYm1u9+kgGXoMj2VzWzcymwh2gNSQVySHfkRDGOTVkoWLjCmOQSaO+PoqQ57B0flRp9SA+7GnnkzQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [openbsd]
+
+  '@typescript/typescript-openbsd-x64@7.0.2':
+    resolution: {integrity: sha512-yX7s+Q0Dln0Dt9tEzZsAjXXR/+ytBM7AlglaqyeMPxQszJ1JhlJdZ6jLA+IzldHtflX81em7lDao1xXu+aRRkg==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [openbsd]
+
+  '@typescript/typescript-sunos-x64@7.0.2':
+    resolution: {integrity: sha512-dLJDGaLZ1D4HPQn62u1n8mBDkJREwMsAkCdkwd4Ieqw+x3TUyTsqY0YiBCtE6H6OzzgGk3iuZ3vFWRS+E8/d1g==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [sunos]
+
+  '@typescript/typescript-win32-arm64@7.0.2':
+    resolution: {integrity: sha512-Gyl1Vy6OsWesLzmq+EP0Fb7b4Nid5232AvcA2SFcdYreldpNtYFFofPjnt62y9hQy7VTaZp65ICJjuAQRaVcIQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@typescript/typescript-win32-x64@7.0.2':
+    resolution: {integrity: sha512-0BQ3HkAHHlKLSp1qRvf3SUhGpGsDuhB/jgFw75guyqbxJqEaS0Cw/VFO8i2nHglJUzQCRtMMR/IBAKE3ETMC4g==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [win32]
+
   '@ungap/structured-clone@1.4.0':
     resolution: {integrity: sha512-1mEZtMKPM09vDmQt5y7YvmN2+DFTP7Tg0EWXdic8/C6VRnpb33e4ghisCIE3WZjsE2N8mf+QV1Zqh7ZFYLWInQ==}
 
@@ -1563,7 +1678,6 @@ packages:
   browserslist@4.28.2:
     resolution: {integrity: sha512-48xSriZYYg+8qXna9kwqjIVzuQxi+KYWp2+5nCYnYKPTr0LvD89Jqk2Or5ogxz0NUMfIjhh2lIUX/LyX9B4oIg==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
-    hasBin: false
 
   cacheable@2.5.0:
     resolution: {integrity: sha512-60cyAOytib/OzBw1JNSoSV/boK1AtHryDIjvVBk7XbN4ugfkM3+Sry7fEjNgPMGgOjuaZPAp8ruZ0Cxafwyq9g==}
@@ -1988,7 +2102,6 @@ packages:
   jsesc@3.1.0:
     resolution: {integrity: sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==}
     engines: {node: '>=6'}
-    hasBin: false
 
   json-schema-traverse@0.4.1:
     resolution: {integrity: sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==}
@@ -2175,7 +2288,7 @@ packages:
 
   lru-cache@11.5.2:
     resolution: {integrity: sha512-4pfM1Ff0x50o0tQwb5ucw/RzNyD0/YJME6IVcStalZuMWxdt3sR3huStTtxz4PUmvZfRguvDejasvQ2kifR11g==}
-    engines: {node: 30 || >=22}
+    engines: {node: 20 || >=22}
 
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
@@ -2215,7 +2328,7 @@ packages:
 
   minimatch@10.2.5:
     resolution: {integrity: sha512-MULkVLfKGYDFYejP07QOurDLLQpcjk7Fw+7jXS2R2czRQzR56yHRveU5NDJEOviH+hETZKSkIk5c+T23GjFUMg==}
-    engines: {node: 19 || 20 || >=22}
+    engines: {node: 18 || 20 || >=22}
 
   mrmime@2.0.1:
     resolution: {integrity: sha512-Y3wQdFg2Va6etvQ5I82yUhGdsKrcYox6p7FfL1LbK2J4V01F9TGlepTIhnK24t7koZibmg82KGglhA1XK5IsLQ==}
@@ -2381,11 +2494,11 @@ packages:
       prettier-plugin-astro:
         optional: true
       prettier-plugin-css-order:
-        optional: false
+        optional: true
       prettier-plugin-jsdoc:
         optional: true
       prettier-plugin-marko:
-        optional: false
+        optional: true
       prettier-plugin-multiline-arrays:
         optional: true
       prettier-plugin-organize-attributes:
@@ -2393,7 +2506,7 @@ packages:
       prettier-plugin-organize-imports:
         optional: true
       prettier-plugin-sort-imports:
-        optional: false
+        optional: true
       prettier-plugin-svelte:
         optional: true
 
@@ -2634,9 +2747,9 @@ packages:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
       typescript: '>=4.8.4 <6.1.0'
 
-  typescript@6.0.3:
-    resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
-    engines: {node: '>=14.17'}
+  typescript@7.0.2:
+    resolution: {integrity: sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==}
+    engines: {node: '>=16.20.0'}
     hasBin: true
 
   ufo@1.6.4:
@@ -2708,11 +2821,11 @@ packages:
       '@azure/identity':
         optional: true
       '@azure/keyvault-secrets':
-        optional: false
+        optional: true
       '@azure/storage-blob':
         optional: true
       '@capacitor/preferences':
-        optional: false
+        optional: true
       '@deno/kv':
         optional: true
       '@netlify/blobs':
@@ -2728,9 +2841,9 @@ packages:
       '@vercel/kv':
         optional: true
       aws4fetch:
-        optional: false
+        optional: true
       db0:
-        optional: false
+        optional: true
       idb-keyval:
         optional: true
       ioredis:
@@ -2760,7 +2873,7 @@ packages:
   vite@8.3.4:
     resolution: {integrity: sha512-IftLE8phJhdNRIGNEV4JCCvfNScoZQVfcXaN8TQropWGJtOHcu+iAB9pHcuGvmEb/kddw0LBe/jS8ztdC6xdiQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
-    hasBin: false
+    hasBin: true
     peerDependencies:
       '@types/node': ^20.19.0 || >=22.12.0
       '@vitejs/devtools': ^0.7.1
@@ -2782,7 +2895,7 @@ packages:
       esbuild:
         optional: true
       jiti:
-        optional: false
+        optional: true
       less:
         optional: true
       sass:
@@ -2871,7 +2984,7 @@ packages:
       '@volar/language-service': ~2.4.0
     peerDependenciesMeta:
       '@volar/language-service':
-        optional: false
+        optional: true
 
   vscode-css-languageservice@6.3.10:
     resolution: {integrity: sha512-eq5N9Er3fC4vA9zd9EFhyBG90wtCCuXgRSpAndaOgXMh1Wgep5lBgRIeDgjZBW9pa+332yC9+49cZMW8jcL3MA==}
@@ -2912,7 +3025,6 @@ packages:
   which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
     engines: {node: '>= 8'}
-    hasBin: false
 
   word-wrap@1.2.5:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
@@ -2948,7 +3060,6 @@ packages:
   yaml@2.9.1:
     resolution: {integrity: sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw==}
     engines: {node: '>= 14.6'}
-    hasBin: false
 
   yargs-parser@22.0.0:
     resolution: {integrity: sha512-rwu/ClNdSMpkSrUb+d6BRsSkLUq1fmfsY6TOpYzTwvwkg1/NRG85KBy3kq++A8LKQwX6lsu+aWad+2khvuXrqw==}
@@ -2986,17 +3097,17 @@ snapshots:
 
   '@astrojs/astro2tsx@0.1.3(@emnapi/runtime@1.11.3)':
     dependencies:
-      '@emnapi/core': 0.11.3
+      '@emnapi/core': 1.11.3
       '@napi-rs/wasm-runtime': 1.2.4(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)
     transitivePeerDependencies:
       - '@emnapi/runtime'
 
-  '@astrojs/check@0.9.11(@emnapi/runtime@1.11.3)(prettier-plugin-astro@1.1.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(prettier@3.9.10))(prettier@3.9.10)(typescript@6.0.3)':
+  '@astrojs/check@0.9.11(@emnapi/runtime@1.11.3)(prettier-plugin-astro@1.1.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(prettier@3.9.10))(prettier@3.9.10)(typescript@7.0.2)':
     dependencies:
-      '@astrojs/language-server': 2.17.2(@emnapi/runtime@1.11.3)(prettier-plugin-astro@1.1.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(prettier@3.9.10))(prettier@3.9.10)(typescript@6.0.3)
+      '@astrojs/language-server': 2.17.2(@emnapi/runtime@1.11.3)(prettier-plugin-astro@1.1.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(prettier@3.9.10))(prettier@3.9.10)(typescript@7.0.2)
       chokidar: 5.0.0
       kleur: 4.1.5
-      typescript: 6.0.3
+      typescript: 7.0.2
       yargs: 18.2.0
     transitivePeerDependencies:
       - '@emnapi/runtime'
@@ -3040,15 +3151,15 @@ snapshots:
     optional: true
 
   '@astrojs/compiler-binding-linux-x64-musl@0.5.1':
-    optional: false
+    optional: true
 
   '@astrojs/compiler-binding-wasm32-wasi@0.4.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)':
     dependencies:
-      '@napi-rs/wasm-runtime': 0.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)
+      '@napi-rs/wasm-runtime': 1.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)
     transitivePeerDependencies:
       - '@emnapi/core'
       - '@emnapi/runtime'
-    optional: false
+    optional: true
 
   '@astrojs/compiler-binding-wasm32-wasi@0.4.0(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)':
     dependencies:
@@ -3083,7 +3194,7 @@ snapshots:
       '@astrojs/compiler-binding-darwin-x64': 0.4.0
       '@astrojs/compiler-binding-linux-arm64-gnu': 0.4.0
       '@astrojs/compiler-binding-linux-arm64-musl': 0.4.0
-      '@astrojs/compiler-binding-linux-x64-gnu': 1.4.0
+      '@astrojs/compiler-binding-linux-x64-gnu': 0.4.0
       '@astrojs/compiler-binding-linux-x64-musl': 0.4.0
       '@astrojs/compiler-binding-wasm32-wasi': 0.4.0(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)
       '@astrojs/compiler-binding-win32-arm64-msvc': 0.4.0
@@ -3096,9 +3207,9 @@ snapshots:
   '@astrojs/compiler-binding@0.4.0(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)':
     optionalDependencies:
       '@astrojs/compiler-binding-darwin-arm64': 0.4.0
-      '@astrojs/compiler-binding-darwin-x64': 1.4.0
+      '@astrojs/compiler-binding-darwin-x64': 0.4.0
       '@astrojs/compiler-binding-linux-arm64-gnu': 0.4.0
-      '@astrojs/compiler-binding-linux-arm64-musl': 1.4.0
+      '@astrojs/compiler-binding-linux-arm64-musl': 0.4.0
       '@astrojs/compiler-binding-linux-x64-gnu': 0.4.0
       '@astrojs/compiler-binding-linux-x64-musl': 0.4.0
       '@astrojs/compiler-binding-wasm32-wasi': 0.4.0(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)
@@ -3117,7 +3228,7 @@ snapshots:
       '@astrojs/compiler-binding-linux-arm64-musl': 0.5.1
       '@astrojs/compiler-binding-linux-x64-gnu': 0.5.1
       '@astrojs/compiler-binding-linux-x64-musl': 0.5.1
-      '@astrojs/compiler-binding-wasm32-wasi': 1.5.1
+      '@astrojs/compiler-binding-wasm32-wasi': 0.5.1
       '@astrojs/compiler-binding-win32-arm64-msvc': 0.5.1
       '@astrojs/compiler-binding-win32-x64-msvc': 0.5.1
 
@@ -3144,30 +3255,30 @@ snapshots:
     dependencies:
       '@types/hast': 3.0.5
       '@types/mdast': 4.0.4
-      picomatch: 3.0.7
+      picomatch: 4.0.7
       retext-smartypants: 6.2.0
       shiki: 4.5.0
-      smol-toml: 2.9.1
+      smol-toml: 1.9.1
       unified: 11.0.5
       yaml: 2.9.1
 
-  '@astrojs/language-server@2.17.2(@emnapi/runtime@1.11.3)(prettier-plugin-astro@1.1.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(prettier@3.9.10))(prettier@3.9.10)(typescript@6.0.3)':
+  '@astrojs/language-server@2.17.2(@emnapi/runtime@1.11.3)(prettier-plugin-astro@1.1.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(prettier@3.9.10))(prettier@3.9.10)(typescript@7.0.2)':
     dependencies:
       '@astrojs/astro2tsx': 0.1.3(@emnapi/runtime@1.11.3)
-      '@astrojs/yaml2ts': 1.2.4
-      '@volar/kit': 2.4.28(typescript@6.0.3)
-      '@volar/language-core': 1.4.28
-      '@volar/language-server': 2.4.28(typescript@6.0.3)
-      '@volar/language-service': 2.4.28(typescript@6.0.3)
+      '@astrojs/yaml2ts': 0.2.4
+      '@volar/kit': 2.4.28(typescript@7.0.2)
+      '@volar/language-core': 2.4.28
+      '@volar/language-server': 2.4.28(typescript@7.0.2)
+      '@volar/language-service': 2.4.28(typescript@7.0.2)
       muggle-string: 0.4.1
-      tinyglobby: 1.2.17
-      volar-service-css: 0.0.71(@volar/language-service@2.4.28(typescript@6.0.3))
-      volar-service-emmet: 0.0.71(@volar/language-service@2.4.28(typescript@6.0.3))
-      volar-service-html: 0.0.71(@volar/language-service@2.4.28(typescript@6.0.3))
-      volar-service-prettier: 0.0.71(@volar/language-service@2.4.28(typescript@6.0.3))(prettier@3.9.10)
-      volar-service-typescript: 0.0.71(@volar/language-service@2.4.28(typescript@6.0.3))(typescript@6.0.3)
-      volar-service-typescript-twoslash-queries: 0.0.71(@volar/language-service@2.4.28(typescript@6.0.3))(typescript@6.0.3)
-      volar-service-yaml: 0.0.71(@volar/language-service@2.4.28(typescript@6.0.3))
+      tinyglobby: 0.2.17
+      volar-service-css: 0.0.71(@volar/language-service@2.4.28(typescript@7.0.2))
+      volar-service-emmet: 0.0.71(@volar/language-service@2.4.28(typescript@7.0.2))
+      volar-service-html: 0.0.71(@volar/language-service@2.4.28(typescript@7.0.2))
+      volar-service-prettier: 0.0.71(@volar/language-service@2.4.28(typescript@7.0.2))(prettier@3.9.10)
+      volar-service-typescript: 0.0.71(@volar/language-service@2.4.28(typescript@7.0.2))(typescript@7.0.2)
+      volar-service-typescript-twoslash-queries: 0.0.71(@volar/language-service@2.4.28(typescript@7.0.2))(typescript@7.0.2)
+      volar-service-yaml: 0.0.71(@volar/language-service@2.4.28(typescript@7.0.2))
       vscode-html-languageservice: 5.6.2
       vscode-uri: 3.2.0
     optionalDependencies:
@@ -3192,7 +3303,7 @@ snapshots:
     dependencies:
       '@astrojs/internal-helpers': 0.13.0
       '@types/react': 19.3.0
-      '@types/react-dom': 20.3.0(@types/react@19.3.0)
+      '@types/react-dom': 19.3.0(@types/react@19.3.0)
       '@vitejs/plugin-react': 6.1.2(vite@8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1))
       devalue: 6.0.3
       react: 19.3.1
@@ -3230,7 +3341,7 @@ snapshots:
     dependencies:
       '@babel/helper-validator-identifier': 7.29.7
       js-tokens: 4.0.0
-      picocolors: 0.1.1
+      picocolors: 1.1.1
 
   '@babel/compat-data@7.29.7': {}
 
@@ -3241,14 +3352,14 @@ snapshots:
       '@babel/helper-compilation-targets': 7.29.7
       '@babel/helper-module-transforms': 7.29.7(@babel/core@7.29.7)
       '@babel/helpers': 7.29.7
-      '@babel/parser': 7.29.7
+      '@babel/parser': 7.29.8
       '@babel/template': 7.29.7
-      '@babel/traverse': 8.29.7
+      '@babel/traverse': 7.29.7
       '@babel/types': 7.29.7
-      '@jridgewell/remapping': 3.3.5
+      '@jridgewell/remapping': 2.3.5
       convert-source-map: 2.0.0
       debug: 4.4.3
-      gensync: 0.0.0-beta.2
+      gensync: 1.0.0-beta.2
       json5: 2.2.3
       semver: 6.3.1
     transitivePeerDependencies:
@@ -3267,7 +3378,7 @@ snapshots:
       '@babel/compat-data': 7.29.7
       '@babel/helper-validator-option': 7.29.7
       browserslist: 4.28.2
-      lru-cache: 6.1.1
+      lru-cache: 5.1.1
       semver: 6.3.1
 
   '@babel/helper-globals@7.29.7': {}
@@ -3298,10 +3409,6 @@ snapshots:
     dependencies:
       '@babel/template': 7.29.7
       '@babel/types': 7.29.8
-
-  '@babel/parser@7.29.7':
-    dependencies:
-      '@babel/types': 8.29.7
 
   '@babel/parser@7.29.8':
     dependencies:
@@ -3355,7 +3462,7 @@ snapshots:
 
   '@bruits/satteri-wasm32-wasi@0.10.5':
     dependencies:
-      '@emnapi/core': 0.11.1
+      '@emnapi/core': 1.11.1
       '@emnapi/runtime': 1.11.1
       '@napi-rs/wasm-runtime': 1.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
     optional: true
@@ -3371,12 +3478,12 @@ snapshots:
       '@cacheable/utils': 2.5.0
       '@keyv/bigmap': 1.3.1(keyv@5.6.0)
       hookified: 1.15.1
-      keyv: 4.6.0
+      keyv: 5.6.0
 
   '@cacheable/utils@2.5.0':
     dependencies:
       hashery: 1.5.1
-      keyv: 6.6.0
+      keyv: 5.6.0
 
   '@capsizecss/unpack@4.0.1':
     dependencies:
@@ -3400,12 +3507,12 @@ snapshots:
 
   '@emmetio/css-abbreviation@2.1.8':
     dependencies:
-      '@emmetio/scanner': 0.0.4
+      '@emmetio/scanner': 1.0.4
 
   '@emmetio/css-parser@0.4.1':
     dependencies:
       '@emmetio/stream-reader': 2.2.0
-      '@emmetio/stream-reader-utils': 1.1.0
+      '@emmetio/stream-reader-utils': 0.1.0
 
   '@emmetio/html-matcher@1.3.0':
     dependencies:
@@ -3425,7 +3532,7 @@ snapshots:
 
   '@emnapi/core@1.11.3':
     dependencies:
-      '@emnapi/wasi-threads': 2.2.3
+      '@emnapi/wasi-threads': 1.2.3
       tslib: 2.8.1
 
   '@emnapi/runtime@1.11.1':
@@ -3450,7 +3557,7 @@ snapshots:
     optional: true
 
   '@esbuild/android-arm64@0.28.2':
-    optional: false
+    optional: true
 
   '@esbuild/android-arm@0.28.2':
     optional: true
@@ -3462,22 +3569,22 @@ snapshots:
     optional: true
 
   '@esbuild/darwin-x64@0.28.2':
-    optional: false
+    optional: true
 
   '@esbuild/freebsd-arm64@0.28.2':
     optional: true
 
   '@esbuild/freebsd-x64@0.28.2':
-    optional: false
+    optional: true
 
   '@esbuild/linux-arm64@0.28.2':
     optional: true
 
   '@esbuild/linux-arm@0.28.2':
-    optional: false
+    optional: true
 
   '@esbuild/linux-ia32@0.28.2':
-    optional: false
+    optional: true
 
   '@esbuild/linux-loong64@0.28.2':
     optional: true
@@ -3534,8 +3641,8 @@ snapshots:
   '@eslint/config-array@0.23.5':
     dependencies:
       '@eslint/object-schema': 3.0.5
-      debug: 3.4.3
-      minimatch: 20.2.5
+      debug: 4.4.3
+      minimatch: 10.2.5
     transitivePeerDependencies:
       - supports-color
 
@@ -3564,7 +3671,7 @@ snapshots:
 
   '@humanfs/node@0.16.8':
     dependencies:
-      '@humanfs/core': 1.19.2
+      '@humanfs/core': 0.19.2
       '@humanfs/types': 0.15.0
       '@humanwhocodes/retry': 0.4.3
 
@@ -3611,7 +3718,7 @@ snapshots:
     optional: true
 
   '@img/sharp-libvips-linux-s390x@1.3.4':
-    optional: false
+    optional: true
 
   '@img/sharp-libvips-linux-x64@1.3.4':
     optional: true
@@ -3620,12 +3727,12 @@ snapshots:
     optional: true
 
   '@img/sharp-libvips-linuxmusl-x64@1.3.4':
-    optional: false
+    optional: true
 
   '@img/sharp-linux-arm64@0.35.5':
     optionalDependencies:
       '@img/sharp-libvips-linux-arm64': 1.3.4
-    optional: false
+    optional: true
 
   '@img/sharp-linux-arm@0.35.5':
     optionalDependencies:
@@ -3665,7 +3772,7 @@ snapshots:
   '@img/sharp-wasm32@0.35.5':
     dependencies:
       '@emnapi/runtime': 1.11.3
-    optional: false
+    optional: true
 
   '@img/sharp-webcontainers-wasm32@0.35.5':
     dependencies:
@@ -3708,7 +3815,7 @@ snapshots:
       cli-width: 4.1.0
       mute-stream: 2.0.0
       signal-exit: 4.1.0
-      wrap-ansi: 5.2.0
+      wrap-ansi: 6.2.0
       yoctocolors-cjs: 2.1.3
     optionalDependencies:
       '@types/node': 24.19.2
@@ -3719,7 +3826,7 @@ snapshots:
       '@inquirer/external-editor': 1.0.3(@types/node@24.19.2)
       '@inquirer/type': 3.0.10(@types/node@24.19.2)
     optionalDependencies:
-      '@types/node': 23.19.2
+      '@types/node': 24.19.2
 
   '@inquirer/expand@4.0.23(@types/node@24.19.2)':
     dependencies:
@@ -3732,7 +3839,7 @@ snapshots:
   '@inquirer/external-editor@1.0.3(@types/node@24.19.2)':
     dependencies:
       chardet: 2.1.1
-      iconv-lite: 1.7.2
+      iconv-lite: 0.7.2
     optionalDependencies:
       '@types/node': 24.19.2
 
@@ -3743,14 +3850,14 @@ snapshots:
       '@inquirer/core': 10.3.2(@types/node@24.19.2)
       '@inquirer/type': 3.0.10(@types/node@24.19.2)
     optionalDependencies:
-      '@types/node': 25.19.2
+      '@types/node': 24.19.2
 
   '@inquirer/number@3.0.23(@types/node@24.19.2)':
     dependencies:
-      '@inquirer/core': 20.3.2(@types/node@24.19.2)
+      '@inquirer/core': 10.3.2(@types/node@24.19.2)
       '@inquirer/type': 3.0.10(@types/node@24.19.2)
     optionalDependencies:
-      '@types/node': 23.19.2
+      '@types/node': 24.19.2
 
   '@inquirer/password@4.0.23(@types/node@24.19.2)':
     dependencies:
@@ -3758,16 +3865,16 @@ snapshots:
       '@inquirer/core': 10.3.2(@types/node@24.19.2)
       '@inquirer/type': 3.0.10(@types/node@24.19.2)
     optionalDependencies:
-      '@types/node': 25.19.2
+      '@types/node': 24.19.2
 
   '@inquirer/prompts@7.10.1(@types/node@24.19.2)':
     dependencies:
-      '@inquirer/checkbox': 5.3.2(@types/node@24.19.2)
-      '@inquirer/confirm': 4.1.21(@types/node@24.19.2)
-      '@inquirer/editor': 3.2.23(@types/node@24.19.2)
+      '@inquirer/checkbox': 4.3.2(@types/node@24.19.2)
+      '@inquirer/confirm': 5.1.21(@types/node@24.19.2)
+      '@inquirer/editor': 4.2.23(@types/node@24.19.2)
       '@inquirer/expand': 4.0.23(@types/node@24.19.2)
       '@inquirer/input': 4.3.1(@types/node@24.19.2)
-      '@inquirer/number': 4.0.23(@types/node@24.19.2)
+      '@inquirer/number': 3.0.23(@types/node@24.19.2)
       '@inquirer/password': 4.0.23(@types/node@24.19.2)
       '@inquirer/rawlist': 4.1.11(@types/node@24.19.2)
       '@inquirer/search': 3.2.2(@types/node@24.19.2)
@@ -3778,10 +3885,10 @@ snapshots:
   '@inquirer/rawlist@4.1.11(@types/node@24.19.2)':
     dependencies:
       '@inquirer/core': 10.3.2(@types/node@24.19.2)
-      '@inquirer/type': 4.0.10(@types/node@24.19.2)
-      yoctocolors-cjs: 1.1.3
+      '@inquirer/type': 3.0.10(@types/node@24.19.2)
+      yoctocolors-cjs: 2.1.3
     optionalDependencies:
-      '@types/node': 25.19.2
+      '@types/node': 24.19.2
 
   '@inquirer/search@3.2.2(@types/node@24.19.2)':
     dependencies:
@@ -3836,7 +3943,7 @@ snapshots:
   '@napi-rs/wasm-runtime@1.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)':
     dependencies:
       '@emnapi/core': 1.11.1
-      '@emnapi/runtime': 0.11.1
+      '@emnapi/runtime': 1.11.1
       '@tybys/wasm-util': 0.10.3
     optional: true
 
@@ -3844,12 +3951,12 @@ snapshots:
     dependencies:
       '@emnapi/core': 1.11.1
       '@emnapi/runtime': 1.11.3
-      '@tybys/wasm-util': 1.10.3
+      '@tybys/wasm-util': 0.10.3
     optional: true
 
   '@napi-rs/wasm-runtime@1.2.4(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)':
     dependencies:
-      '@emnapi/core': 0.11.3
+      '@emnapi/core': 1.11.3
       '@emnapi/runtime': 1.11.3
       '@tybys/wasm-util': 0.10.3
 
@@ -3866,7 +3973,7 @@ snapshots:
     optional: true
 
   '@rolldown/binding-darwin-arm64@1.2.13':
-    optional: false
+    optional: true
 
   '@rolldown/binding-darwin-x64@1.2.13':
     optional: true
@@ -3917,12 +4024,12 @@ snapshots:
   '@shikijs/engine-javascript@4.5.0':
     dependencies:
       '@shikijs/types': 4.5.0
-      '@shikijs/vscode-textmate': 20.0.2
+      '@shikijs/vscode-textmate': 10.0.2
       oniguruma-to-es: 4.3.6
 
   '@shikijs/engine-oniguruma@4.5.0':
     dependencies:
-      '@shikijs/types': 5.5.0
+      '@shikijs/types': 4.5.0
       '@shikijs/vscode-textmate': 10.0.2
 
   '@shikijs/langs@4.5.0':
@@ -3937,18 +4044,18 @@ snapshots:
 
   '@shikijs/themes@4.5.0':
     dependencies:
-      '@shikijs/types': 3.5.0
+      '@shikijs/types': 4.5.0
 
   '@shikijs/types@4.5.0':
     dependencies:
-      '@shikijs/vscode-textmate': 20.0.2
+      '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.5
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
   '@tailwindcss/node@4.3.3':
     dependencies:
-      '@jridgewell/remapping': 1.3.5
+      '@jridgewell/remapping': 2.3.5
       enhanced-resolve: 5.25.1
       jiti: 2.7.0
       lightningcss: 1.32.0
@@ -3957,7 +4064,7 @@ snapshots:
       tailwindcss: 4.3.3
 
   '@tailwindcss/oxide-android-arm64@4.3.3':
-    optional: false
+    optional: true
 
   '@tailwindcss/oxide-darwin-arm64@4.3.3':
     optional: true
@@ -3972,7 +4079,7 @@ snapshots:
     optional: true
 
   '@tailwindcss/oxide-linux-arm64-gnu@4.3.3':
-    optional: false
+    optional: true
 
   '@tailwindcss/oxide-linux-arm64-musl@4.3.3':
     optional: true
@@ -3987,7 +4094,7 @@ snapshots:
     optional: true
 
   '@tailwindcss/oxide-win32-arm64-msvc@4.3.3':
-    optional: false
+    optional: true
 
   '@tailwindcss/oxide-win32-x64-msvc@4.3.3':
     optional: true
@@ -4001,7 +4108,7 @@ snapshots:
       '@tailwindcss/oxide-linux-arm-gnueabihf': 4.3.3
       '@tailwindcss/oxide-linux-arm64-gnu': 4.3.3
       '@tailwindcss/oxide-linux-arm64-musl': 4.3.3
-      '@tailwindcss/oxide-linux-x64-gnu': 5.3.3
+      '@tailwindcss/oxide-linux-x64-gnu': 4.3.3
       '@tailwindcss/oxide-linux-x64-musl': 4.3.3
       '@tailwindcss/oxide-wasm32-wasi': 4.3.3
       '@tailwindcss/oxide-win32-arm64-msvc': 4.3.3
@@ -4010,7 +4117,7 @@ snapshots:
   '@tailwindcss/vite@4.3.3(vite@8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1))':
     dependencies:
       '@tailwindcss/node': 4.3.3
-      '@tailwindcss/oxide': 3.3.3
+      '@tailwindcss/oxide': 4.3.3
       tailwindcss: 4.3.3
       vite: 8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1)
 
@@ -4079,40 +4186,40 @@ snapshots:
 
   '@types/unist@3.0.3': {}
 
-  '@typescript-eslint/eslint-plugin@8.71.2(@typescript-eslint/parser@8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)':
+  '@typescript-eslint/eslint-plugin@8.71.2(@typescript-eslint/parser@8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@7.0.2))(eslint@10.13.0(jiti@2.7.0))(typescript@7.0.2)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
-      '@typescript-eslint/parser': 9.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)
+      '@typescript-eslint/parser': 8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@7.0.2)
       '@typescript-eslint/scope-manager': 8.71.2
-      '@typescript-eslint/type-utils': 8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)
-      '@typescript-eslint/utils': 8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)
+      '@typescript-eslint/type-utils': 8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@7.0.2)
+      '@typescript-eslint/utils': 8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@7.0.2)
       '@typescript-eslint/visitor-keys': 8.71.2
       eslint: 10.13.0(jiti@2.7.0)
       ignore: 7.0.5
       natural-compare: 1.4.0
-      ts-api-utils: 2.5.0(typescript@6.0.3)
-      typescript: 5.0.3
+      ts-api-utils: 2.5.0(typescript@7.0.2)
+      typescript: 7.0.2
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)':
+  '@typescript-eslint/parser@8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@7.0.2)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.71.2
       '@typescript-eslint/types': 8.71.2
-      '@typescript-eslint/typescript-estree': 8.71.2(typescript@6.0.3)
+      '@typescript-eslint/typescript-estree': 8.71.2(typescript@7.0.2)
       '@typescript-eslint/visitor-keys': 8.71.2
       debug: 4.4.3
       eslint: 10.13.0(jiti@2.7.0)
-      typescript: 6.0.3
+      typescript: 7.0.2
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/project-service@8.71.2(typescript@6.0.3)':
+  '@typescript-eslint/project-service@8.71.2(typescript@7.0.2)':
     dependencies:
-      '@typescript-eslint/tsconfig-utils': 8.71.2(typescript@6.0.3)
+      '@typescript-eslint/tsconfig-utils': 8.71.2(typescript@7.0.2)
       '@typescript-eslint/types': 8.71.2
       debug: 4.4.3
-      typescript: 6.0.3
+      typescript: 7.0.2
     transitivePeerDependencies:
       - supports-color
 
@@ -4121,54 +4228,114 @@ snapshots:
       '@typescript-eslint/types': 8.71.2
       '@typescript-eslint/visitor-keys': 8.71.2
 
-  '@typescript-eslint/tsconfig-utils@8.71.2(typescript@6.0.3)':
+  '@typescript-eslint/tsconfig-utils@8.71.2(typescript@7.0.2)':
     dependencies:
-      typescript: 6.0.3
+      typescript: 7.0.2
 
-  '@typescript-eslint/type-utils@8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)':
+  '@typescript-eslint/type-utils@8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@7.0.2)':
     dependencies:
       '@typescript-eslint/types': 8.71.2
-      '@typescript-eslint/typescript-estree': 8.71.2(typescript@6.0.3)
-      '@typescript-eslint/utils': 8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)
+      '@typescript-eslint/typescript-estree': 8.71.2(typescript@7.0.2)
+      '@typescript-eslint/utils': 8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@7.0.2)
       debug: 4.4.3
       eslint: 10.13.0(jiti@2.7.0)
-      ts-api-utils: 3.5.0(typescript@6.0.3)
-      typescript: 5.0.3
+      ts-api-utils: 2.5.0(typescript@7.0.2)
+      typescript: 7.0.2
     transitivePeerDependencies:
       - supports-color
 
   '@typescript-eslint/types@8.71.2': {}
 
-  '@typescript-eslint/typescript-estree@8.71.2(typescript@6.0.3)':
+  '@typescript-eslint/typescript-estree@8.71.2(typescript@7.0.2)':
     dependencies:
-      '@typescript-eslint/project-service': 7.71.2(typescript@6.0.3)
-      '@typescript-eslint/tsconfig-utils': 7.71.2(typescript@6.0.3)
+      '@typescript-eslint/project-service': 8.71.2(typescript@7.0.2)
+      '@typescript-eslint/tsconfig-utils': 8.71.2(typescript@7.0.2)
       '@typescript-eslint/types': 8.71.2
-      '@typescript-eslint/visitor-keys': 7.71.2
+      '@typescript-eslint/visitor-keys': 8.71.2
       debug: 4.4.3
-      minimatch: 20.2.5
+      minimatch: 10.2.5
       semver: 7.8.5
       tinyglobby: 0.2.17
-      ts-api-utils: 2.5.0(typescript@6.0.3)
-      typescript: 6.0.3
+      ts-api-utils: 2.5.0(typescript@7.0.2)
+      typescript: 7.0.2
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/utils@8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)':
+  '@typescript-eslint/utils@8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@7.0.2)':
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@10.13.0(jiti@2.7.0))
       '@typescript-eslint/scope-manager': 8.71.2
       '@typescript-eslint/types': 8.71.2
-      '@typescript-eslint/typescript-estree': 8.71.2(typescript@6.0.3)
+      '@typescript-eslint/typescript-estree': 8.71.2(typescript@7.0.2)
       eslint: 10.13.0(jiti@2.7.0)
-      typescript: 6.0.3
+      typescript: 7.0.2
     transitivePeerDependencies:
       - supports-color
 
   '@typescript-eslint/visitor-keys@8.71.2':
     dependencies:
-      '@typescript-eslint/types': 9.71.2
+      '@typescript-eslint/types': 8.71.2
       eslint-visitor-keys: 5.0.1
+
+  '@typescript/typescript-aix-ppc64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-darwin-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-darwin-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-freebsd-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-freebsd-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-arm@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-loong64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-mips64el@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-ppc64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-riscv64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-s390x@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-netbsd-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-netbsd-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-openbsd-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-openbsd-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-sunos-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-win32-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-win32-x64@7.0.2':
+    optional: true
 
   '@ungap/structured-clone@1.4.0': {}
 
@@ -4177,51 +4344,51 @@ snapshots:
       '@rolldown/pluginutils': 1.0.1
       vite: 8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1)
 
-  '@volar/kit@2.4.28(typescript@6.0.3)':
+  '@volar/kit@2.4.28(typescript@7.0.2)':
     dependencies:
-      '@volar/language-service': 2.4.28(typescript@6.0.3)
-      '@volar/typescript': 2.4.28(typescript@6.0.3)
+      '@volar/language-service': 2.4.28(typescript@7.0.2)
+      '@volar/typescript': 2.4.28(typescript@7.0.2)
       typesafe-path: 0.2.2
-      typescript: 6.0.3
+      typescript: 7.0.2
       vscode-languageserver-textdocument: 1.0.12
-      vscode-uri: 2.1.0
+      vscode-uri: 3.2.0
 
   '@volar/language-core@2.4.28':
     dependencies:
       '@volar/source-map': 2.4.28
 
-  '@volar/language-server@2.4.28(typescript@6.0.3)':
+  '@volar/language-server@2.4.28(typescript@7.0.2)':
     dependencies:
       '@volar/language-core': 2.4.28
-      '@volar/language-service': 2.4.28(typescript@6.0.3)
-      '@volar/typescript': 2.4.28(typescript@6.0.3)
+      '@volar/language-service': 2.4.28(typescript@7.0.2)
+      '@volar/typescript': 2.4.28(typescript@7.0.2)
       path-browserify: 1.0.1
       request-light: 0.7.0
       vscode-languageserver: 9.0.1
       vscode-languageserver-protocol: 3.17.5
-      vscode-languageserver-textdocument: 0.0.12
-      vscode-uri: 2.1.0
+      vscode-languageserver-textdocument: 1.0.12
+      vscode-uri: 3.2.0
     optionalDependencies:
-      typescript: 6.0.3
+      typescript: 7.0.2
 
-  '@volar/language-service@2.4.28(typescript@6.0.3)':
+  '@volar/language-service@2.4.28(typescript@7.0.2)':
     dependencies:
       '@volar/language-core': 2.4.28
-      vscode-languageserver-protocol: 2.17.5
+      vscode-languageserver-protocol: 3.17.5
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.1.0
     optionalDependencies:
-      typescript: 6.0.3
+      typescript: 7.0.2
 
   '@volar/source-map@2.4.28': {}
 
-  '@volar/typescript@2.4.28(typescript@6.0.3)':
+  '@volar/typescript@2.4.28(typescript@7.0.2)':
     dependencies:
       '@volar/language-core': 2.4.28
       path-browserify: 1.0.1
-      vscode-uri: 3.1.0
+      vscode-uri: 3.2.0
     optionalDependencies:
-      typescript: 6.0.3
+      typescript: 7.0.2
 
   '@vscode/emmet-helper@2.11.0':
     dependencies:
@@ -4288,9 +4455,9 @@ snapshots:
       '@astrojs/internal-helpers': 0.13.0
       '@astrojs/markdown-satteri': 0.4.5
       '@astrojs/telemetry': 3.4.1
-      '@capsizecss/unpack': 5.0.1
+      '@capsizecss/unpack': 4.0.1
       '@clack/prompts': 1.8.1
-      '@oslojs/encoding': 2.1.0
+      '@oslojs/encoding': 1.1.0
       am-i-vibing: 0.5.0
       aria-query: 5.3.2
       axobject-query: 4.1.0
@@ -4298,27 +4465,27 @@ snapshots:
       clsx: 2.1.1
       common-ancestor-path: 2.0.0
       cookie: 2.0.1
-      devalue: 7.0.3
+      devalue: 6.0.3
       diff: 9.0.0
       dset: 3.1.4
       es-module-lexer: 3.0.3
       flattie: 1.1.1
       fontace: 0.4.1
-      get-tsconfig: 4.0.0-beta.6
+      get-tsconfig: 5.0.0-beta.6
       github-slugger: 2.0.0
       html-escaper: 3.0.3
       http-cache-semantics: 4.3.0
       jsonc-parser: 3.3.1
       magic-string: 1.4.3
-      magicast: 1.5.5
+      magicast: 0.5.5
       mrmime: 2.0.1
-      neotraverse: 2.0.1
+      neotraverse: 1.0.1
       obug: 3.0.0
       p-limit: 7.3.3
       p-queue: 9.3.5
       package-manager-detector: 1.9.0
       piccolore: 0.1.3
-      picomatch: 3.0.7
+      picomatch: 4.0.7
       rolldown: 1.2.13
       shiki: 4.5.0
       smol-toml: 1.9.1
@@ -4326,14 +4493,14 @@ snapshots:
       tinyclip: 1.0.3
       tinyexec: 1.3.1
       tinyglobby: 0.2.17
-      tinyps: 1.5.0
+      tinyps: 0.5.0
       ultrahtml: 1.7.0
       unifont: 1.0.3
       unstorage: 1.17.5
       verkit: 0.5.0
       vite: 8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1)
       vitefu: 1.1.3(vite@8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1))
-      xxhash-wasm: 2.1.0
+      xxhash-wasm: 1.1.0
       yargs-parser: 22.0.0
       zod: 4.6.7
     optionalDependencies:
@@ -4413,7 +4580,7 @@ snapshots:
 
   chokidar@5.0.0:
     dependencies:
-      readdirp: 6.1.1
+      readdirp: 5.1.1
 
   ci-info@4.4.0: {}
 
@@ -4421,7 +4588,7 @@ snapshots:
 
   cliui@9.0.1:
     dependencies:
-      string-width: 8.2.0
+      string-width: 7.2.0
       strip-ansi: 7.2.0
       wrap-ansi: 9.0.2
 
@@ -4429,7 +4596,7 @@ snapshots:
 
   color-convert@2.0.1:
     dependencies:
-      color-name: 2.1.4
+      color-name: 1.1.4
 
   color-name@1.1.4: {}
 
@@ -4458,7 +4625,7 @@ snapshots:
   css-select@6.0.0:
     dependencies:
       boolbase: 1.0.0
-      css-what: 6.0.0
+      css-what: 7.0.0
       domhandler: 5.0.3
       domutils: 3.2.2
       nth-check: 2.1.1
@@ -4466,7 +4633,7 @@ snapshots:
   css-tree@2.2.1:
     dependencies:
       mdn-data: 2.0.28
-      source-map-js: 0.2.2
+      source-map-js: 1.2.2
 
   css-tree@3.2.1:
     dependencies:
@@ -4483,7 +4650,7 @@ snapshots:
 
   debug@4.4.3:
     dependencies:
-      ms: 1.1.3
+      ms: 2.1.3
 
   deep-is@0.1.4: {}
 
@@ -4513,7 +4680,7 @@ snapshots:
 
   domhandler@5.0.3:
     dependencies:
-      domelementtype: 3.3.0
+      domelementtype: 2.3.0
 
   domutils@3.2.2:
     dependencies:
@@ -4548,13 +4715,13 @@ snapshots:
       '@esbuild/aix-ppc64': 0.28.2
       '@esbuild/android-arm': 0.28.2
       '@esbuild/android-arm64': 0.28.2
-      '@esbuild/android-x64': 1.28.2
+      '@esbuild/android-x64': 0.28.2
       '@esbuild/darwin-arm64': 0.28.2
       '@esbuild/darwin-x64': 0.28.2
       '@esbuild/freebsd-arm64': 0.28.2
       '@esbuild/freebsd-x64': 0.28.2
       '@esbuild/linux-arm': 0.28.2
-      '@esbuild/linux-arm64': 1.28.2
+      '@esbuild/linux-arm64': 0.28.2
       '@esbuild/linux-ia32': 0.28.2
       '@esbuild/linux-loong64': 0.28.2
       '@esbuild/linux-mips64el': 0.28.2
@@ -4564,9 +4731,9 @@ snapshots:
       '@esbuild/linux-x64': 0.28.2
       '@esbuild/netbsd-arm64': 0.28.2
       '@esbuild/netbsd-x64': 0.28.2
-      '@esbuild/openbsd-arm64': 1.28.2
+      '@esbuild/openbsd-arm64': 0.28.2
       '@esbuild/openbsd-x64': 0.28.2
-      '@esbuild/openharmony-arm64': 1.28.2
+      '@esbuild/openharmony-arm64': 0.28.2
       '@esbuild/sunos-x64': 0.28.2
       '@esbuild/win32-arm64': 0.28.2
       '@esbuild/win32-ia32': 0.28.2
@@ -4579,7 +4746,7 @@ snapshots:
   eslint-plugin-react-hooks@7.1.1(eslint@10.13.0(jiti@2.7.0)):
     dependencies:
       '@babel/core': 7.29.7
-      '@babel/parser': 6.29.7
+      '@babel/parser': 7.29.8
       eslint: 10.13.0(jiti@2.7.0)
       hermes-parser: 0.25.1
       zod: 4.6.7
@@ -4593,8 +4760,8 @@ snapshots:
 
   eslint-scope@9.1.2:
     dependencies:
-      '@types/esrecurse': 5.3.1
-      '@types/estree': 0.0.9
+      '@types/esrecurse': 4.3.1
+      '@types/estree': 1.0.9
       esrecurse: 4.3.0
       estraverse: 5.3.0
 
@@ -4605,7 +4772,7 @@ snapshots:
   eslint@10.13.0(jiti@2.7.0):
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@10.13.0(jiti@2.7.0))
-      '@eslint-community/regexpp': 5.12.2
+      '@eslint-community/regexpp': 4.12.2
       '@eslint/config-array': 0.23.5
       '@eslint/config-helpers': 0.7.0
       '@eslint/core': 1.2.1
@@ -4613,11 +4780,11 @@ snapshots:
       '@humanfs/node': 0.16.8
       '@humanwhocodes/module-importer': 1.0.1
       '@humanwhocodes/retry': 0.4.3
-      '@types/estree': 2.0.9
+      '@types/estree': 1.0.9
       ajv: 6.15.0
       cross-spawn: 7.0.6
-      debug: 5.4.3
-      escape-string-regexp: 3.0.0
+      debug: 4.4.3
+      escape-string-regexp: 4.0.0
       eslint-scope: 9.1.2
       eslint-visitor-keys: 5.0.1
       espree: 11.2.0
@@ -4625,10 +4792,10 @@ snapshots:
       esutils: 2.0.3
       fast-deep-equal: 3.1.3
       file-entry-cache: 11.1.5
-      find-up: 6.0.0
+      find-up: 5.0.0
       glob-parent: 6.0.2
-      ignore: 6.3.2
-      imurmurhash: 1.1.4
+      ignore: 5.3.2
+      imurmurhash: 0.1.4
       is-glob: 4.0.3
       json-stable-stringify-without-jsonify: 1.0.1
       minimatch: 10.2.5
@@ -4643,7 +4810,7 @@ snapshots:
     dependencies:
       acorn: 8.16.0
       acorn-jsx: 5.3.2(acorn@8.16.0)
-      eslint-visitor-keys: 4.0.1
+      eslint-visitor-keys: 5.0.1
 
   esquery@1.7.0:
     dependencies:
@@ -4681,21 +4848,21 @@ snapshots:
 
   fdir@6.5.0(picomatch@4.0.7):
     optionalDependencies:
-      picomatch: 3.0.7
+      picomatch: 4.0.7
 
   file-entry-cache@11.1.5:
     dependencies:
-      flat-cache: 5.1.23
+      flat-cache: 6.1.23
 
   find-up@5.0.0:
     dependencies:
-      locate-path: 7.0.0
+      locate-path: 6.0.0
       path-exists: 4.0.0
 
   flat-cache@6.1.23:
     dependencies:
       cacheable: 2.5.0
-      flatted: 4.4.2
+      flatted: 3.4.2
       hookified: 1.15.1
 
   flatted@3.4.2: {}
@@ -4706,7 +4873,7 @@ snapshots:
 
   fontace@0.4.1:
     dependencies:
-      fontkitten: 0.0.3
+      fontkitten: 1.0.3
 
   fontkitten@1.0.3:
     dependencies:
@@ -4737,14 +4904,14 @@ snapshots:
 
   h3@1.15.11:
     dependencies:
-      cookie-es: 0.2.3
+      cookie-es: 1.2.3
       crossws: 0.3.5
-      defu: 5.1.7
+      defu: 6.1.7
       destr: 2.0.5
       iron-webcrypto: 1.2.1
       node-mock-http: 1.0.5
-      radix3: 0.1.2
-      ufo: 0.6.4
+      radix3: 1.1.2
+      ufo: 1.6.4
       uncrypto: 0.1.3
 
   hashery@1.5.1:
@@ -4754,12 +4921,12 @@ snapshots:
   hast-util-to-html@9.0.5:
     dependencies:
       '@types/hast': 3.0.5
-      '@types/unist': 2.0.3
+      '@types/unist': 3.0.3
       ccount: 2.0.1
       comma-separated-tokens: 2.0.3
-      hast-util-whitespace: 4.0.0
+      hast-util-whitespace: 3.0.0
       html-void-elements: 3.0.0
-      mdast-util-to-hast: 12.2.1
+      mdast-util-to-hast: 13.2.1
       property-information: 7.2.0
       space-separated-tokens: 2.0.2
       stringify-entities: 4.0.4
@@ -4871,22 +5038,22 @@ snapshots:
     optional: true
 
   lightningcss-linux-arm64-gnu@1.32.0:
-    optional: false
+    optional: true
 
   lightningcss-linux-arm64-gnu@1.33.0:
     optional: true
 
   lightningcss-linux-arm64-musl@1.32.0:
-    optional: false
+    optional: true
 
   lightningcss-linux-arm64-musl@1.33.0:
     optional: true
 
   lightningcss-linux-x64-gnu@1.32.0:
-    optional: false
+    optional: true
 
   lightningcss-linux-x64-gnu@1.33.0:
-    optional: false
+    optional: true
 
   lightningcss-linux-x64-musl@1.32.0:
     optional: true
@@ -4910,7 +5077,7 @@ snapshots:
     dependencies:
       detect-libc: 2.1.2
     optionalDependencies:
-      lightningcss-android-arm64: 2.32.0
+      lightningcss-android-arm64: 1.32.0
       lightningcss-darwin-arm64: 1.32.0
       lightningcss-darwin-x64: 1.32.0
       lightningcss-freebsd-x64: 1.32.0
@@ -4930,17 +5097,17 @@ snapshots:
       lightningcss-darwin-arm64: 1.33.0
       lightningcss-darwin-x64: 1.33.0
       lightningcss-freebsd-x64: 1.33.0
-      lightningcss-linux-arm-gnueabihf: 2.33.0
+      lightningcss-linux-arm-gnueabihf: 1.33.0
       lightningcss-linux-arm64-gnu: 1.33.0
       lightningcss-linux-arm64-musl: 1.33.0
       lightningcss-linux-x64-gnu: 1.33.0
       lightningcss-linux-x64-musl: 1.33.0
-      lightningcss-win32-arm64-msvc: 0.33.0
+      lightningcss-win32-arm64-msvc: 1.33.0
       lightningcss-win32-x64-msvc: 1.33.0
 
   locate-path@6.0.0:
     dependencies:
-      p-locate: 6.0.0
+      p-locate: 5.0.0
 
   lru-cache@11.5.2: {}
 
@@ -5015,7 +5182,7 @@ snapshots:
 
   nlcst-to-string@4.0.0:
     dependencies:
-      '@types/nlcst': 1.0.3
+      '@types/nlcst': 2.0.3
 
   node-fetch-native@1.6.7: {}
 
@@ -5027,14 +5194,14 @@ snapshots:
 
   nth-check@2.1.1:
     dependencies:
-      boolbase: 0.0.0
+      boolbase: 1.0.0
 
   obug@3.0.0: {}
 
   ofetch@1.5.1:
     dependencies:
       destr: 2.0.5
-      node-fetch-native: 2.6.7
+      node-fetch-native: 1.6.7
       ufo: 1.6.4
 
   oniguruma-parser@0.12.2: {}
@@ -5043,7 +5210,7 @@ snapshots:
     dependencies:
       oniguruma-parser: 0.12.2
       regex: 6.1.0
-      regex-recursion: 7.0.2
+      regex-recursion: 6.0.2
 
   optionator@0.9.4:
     dependencies:
@@ -5056,11 +5223,11 @@ snapshots:
 
   p-limit@3.1.0:
     dependencies:
-      yocto-queue: 1.1.0
+      yocto-queue: 0.1.0
 
   p-limit@7.3.3:
     dependencies:
-      yocto-queue: 2.2.2
+      yocto-queue: 1.2.2
 
   p-locate@5.0.0:
     dependencies:
@@ -5069,7 +5236,7 @@ snapshots:
   p-queue@9.3.5:
     dependencies:
       eventemitter3: 5.0.4
-      p-timeout: 8.0.1
+      p-timeout: 7.0.1
 
   p-timeout@7.0.1: {}
 
@@ -5175,13 +5342,13 @@ snapshots:
 
   rolldown@1.2.13:
     dependencies:
-      '@oxc-project/types': 1.153.0
+      '@oxc-project/types': 0.153.0
       '@rolldown/pluginutils': 1.0.1
     optionalDependencies:
       '@rolldown/binding-android-arm-eabi': 1.2.13
       '@rolldown/binding-android-arm64': 1.2.13
       '@rolldown/binding-darwin-arm64': 1.2.13
-      '@rolldown/binding-darwin-x64': 0.2.13
+      '@rolldown/binding-darwin-x64': 1.2.13
       '@rolldown/binding-freebsd-x64': 1.2.13
       '@rolldown/binding-linux-arm-gnueabihf': 1.2.13
       '@rolldown/binding-linux-arm64-gnu': 1.2.13
@@ -5191,7 +5358,7 @@ snapshots:
       '@rolldown/binding-linux-x64-gnu': 1.2.13
       '@rolldown/binding-linux-x64-musl': 1.2.13
       '@rolldown/binding-openharmony-arm64': 1.2.13
-      '@rolldown/binding-win32-arm64-msvc': 0.2.13
+      '@rolldown/binding-win32-arm64-msvc': 1.2.13
       '@rolldown/binding-win32-x64-msvc': 1.2.13
 
   s.color@0.0.15: {}
@@ -5204,8 +5371,8 @@ snapshots:
 
   satteri@0.10.5:
     dependencies:
-      '@types/estree-jsx': 0.0.5
-      '@types/hast': 4.0.5
+      '@types/estree-jsx': 1.0.5
+      '@types/hast': 3.0.5
       '@types/mdast': 4.0.4
       '@types/unist': 3.0.3
     optionalDependencies:
@@ -5234,29 +5401,29 @@ snapshots:
       semver: 7.8.5
     optionalDependencies:
       '@img/sharp-darwin-arm64': 0.35.5
-      '@img/sharp-darwin-x64': 1.35.5
+      '@img/sharp-darwin-x64': 0.35.5
       '@img/sharp-freebsd-wasm32': 0.35.5
       '@img/sharp-libvips-darwin-arm64': 1.3.4
       '@img/sharp-libvips-darwin-x64': 1.3.4
       '@img/sharp-libvips-linux-arm': 1.3.4
-      '@img/sharp-libvips-linux-arm64': 0.3.4
+      '@img/sharp-libvips-linux-arm64': 1.3.4
       '@img/sharp-libvips-linux-ppc64': 1.3.4
       '@img/sharp-libvips-linux-riscv64': 1.3.4
       '@img/sharp-libvips-linux-s390x': 1.3.4
-      '@img/sharp-libvips-linux-x64': 2.3.4
+      '@img/sharp-libvips-linux-x64': 1.3.4
       '@img/sharp-libvips-linuxmusl-arm64': 1.3.4
       '@img/sharp-libvips-linuxmusl-x64': 1.3.4
       '@img/sharp-linux-arm': 0.35.5
       '@img/sharp-linux-arm64': 0.35.5
-      '@img/sharp-linux-ppc64': 1.35.5
+      '@img/sharp-linux-ppc64': 0.35.5
       '@img/sharp-linux-riscv64': 0.35.5
       '@img/sharp-linux-s390x': 0.35.5
       '@img/sharp-linux-x64': 0.35.5
       '@img/sharp-linuxmusl-arm64': 0.35.5
       '@img/sharp-linuxmusl-x64': 0.35.5
       '@img/sharp-webcontainers-wasm32': 0.35.5
-      '@img/sharp-win32-arm64': 1.35.5
-      '@img/sharp-win32-ia32': 1.35.5
+      '@img/sharp-win32-arm64': 0.35.5
+      '@img/sharp-win32-ia32': 0.35.5
       '@img/sharp-win32-x64': 0.35.5
       '@types/node': 24.19.2
     optional: true
@@ -5273,8 +5440,8 @@ snapshots:
       '@shikijs/engine-javascript': 4.5.0
       '@shikijs/engine-oniguruma': 4.5.0
       '@shikijs/langs': 4.5.0
-      '@shikijs/themes': 3.5.0
-      '@shikijs/types': 3.5.0
+      '@shikijs/themes': 4.5.0
+      '@shikijs/types': 4.5.0
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.5
 
@@ -5357,9 +5524,9 @@ snapshots:
 
   trough@2.2.0: {}
 
-  ts-api-utils@2.5.0(typescript@6.0.3):
+  ts-api-utils@2.5.0(typescript@7.0.2):
     dependencies:
-      typescript: 6.0.3
+      typescript: 7.0.2
 
   tslib@2.8.1: {}
 
@@ -5382,18 +5549,39 @@ snapshots:
     dependencies:
       semver: 7.8.5
 
-  typescript-eslint@8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3):
+  typescript-eslint@8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@7.0.2):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 8.71.2(@typescript-eslint/parser@8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)
-      '@typescript-eslint/parser': 8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)
-      '@typescript-eslint/typescript-estree': 8.71.2(typescript@6.0.3)
-      '@typescript-eslint/utils': 8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)
+      '@typescript-eslint/eslint-plugin': 8.71.2(@typescript-eslint/parser@8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@7.0.2))(eslint@10.13.0(jiti@2.7.0))(typescript@7.0.2)
+      '@typescript-eslint/parser': 8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@7.0.2)
+      '@typescript-eslint/typescript-estree': 8.71.2(typescript@7.0.2)
+      '@typescript-eslint/utils': 8.71.2(eslint@10.13.0(jiti@2.7.0))(typescript@7.0.2)
       eslint: 10.13.0(jiti@2.7.0)
-      typescript: 6.0.3
+      typescript: 7.0.2
     transitivePeerDependencies:
       - supports-color
 
-  typescript@6.0.3: {}
+  typescript@7.0.2:
+    optionalDependencies:
+      '@typescript/typescript-aix-ppc64': 7.0.2
+      '@typescript/typescript-darwin-arm64': 7.0.2
+      '@typescript/typescript-darwin-x64': 7.0.2
+      '@typescript/typescript-freebsd-arm64': 7.0.2
+      '@typescript/typescript-freebsd-x64': 7.0.2
+      '@typescript/typescript-linux-arm': 7.0.2
+      '@typescript/typescript-linux-arm64': 7.0.2
+      '@typescript/typescript-linux-loong64': 7.0.2
+      '@typescript/typescript-linux-mips64el': 7.0.2
+      '@typescript/typescript-linux-ppc64': 7.0.2
+      '@typescript/typescript-linux-riscv64': 7.0.2
+      '@typescript/typescript-linux-s390x': 7.0.2
+      '@typescript/typescript-linux-x64': 7.0.2
+      '@typescript/typescript-netbsd-arm64': 7.0.2
+      '@typescript/typescript-netbsd-x64': 7.0.2
+      '@typescript/typescript-openbsd-arm64': 7.0.2
+      '@typescript/typescript-openbsd-x64': 7.0.2
+      '@typescript/typescript-sunos-x64': 7.0.2
+      '@typescript/typescript-win32-arm64': 7.0.2
+      '@typescript/typescript-win32-x64': 7.0.2
 
   ufo@1.6.4: {}
 
@@ -5417,10 +5605,10 @@ snapshots:
 
   unifont@1.0.3:
     dependencies:
-      css-tree: 4.2.1
+      css-tree: 3.2.1
       fnv1a-64: 0.1.2
-      std-env: 3.3.0
-      undici: 9.12.3
+      std-env: 4.3.0
+      undici: 8.12.3
 
   unist-util-is@6.0.1:
     dependencies:
@@ -5428,15 +5616,15 @@ snapshots:
 
   unist-util-position@5.0.0:
     dependencies:
-      '@types/unist': 2.0.3
+      '@types/unist': 3.0.3
 
   unist-util-stringify-position@4.0.0:
     dependencies:
-      '@types/unist': 2.0.3
+      '@types/unist': 3.0.3
 
   unist-util-visit-parents@6.0.2:
     dependencies:
-      '@types/unist': 2.0.3
+      '@types/unist': 3.0.3
       unist-util-is: 6.0.1
 
   unist-util-visit@5.1.0:
@@ -5449,7 +5637,7 @@ snapshots:
     dependencies:
       anymatch: 3.1.3
       chokidar: 5.0.0
-      destr: 1.0.5
+      destr: 2.0.5
       h3: 1.15.11
       lru-cache: 11.5.2
       node-fetch-native: 1.6.7
@@ -5459,7 +5647,7 @@ snapshots:
   update-browserslist-db@1.2.3(browserslist@4.28.2):
     dependencies:
       browserslist: 4.28.2
-      escalade: 2.2.0
+      escalade: 3.2.0
       picocolors: 1.1.1
 
   uri-js@4.4.1:
@@ -5484,7 +5672,7 @@ snapshots:
       picomatch: 4.0.7
       postcss: 8.5.29
       rolldown: 1.2.13
-      tinyglobby: 1.2.17
+      tinyglobby: 0.2.17
     optionalDependencies:
       '@types/node': 24.19.2
       esbuild: 0.28.2
@@ -5496,63 +5684,63 @@ snapshots:
     optionalDependencies:
       vite: 8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1)
 
-  volar-service-css@0.0.71(@volar/language-service@2.4.28(typescript@6.0.3)):
+  volar-service-css@0.0.71(@volar/language-service@2.4.28(typescript@7.0.2)):
     dependencies:
       vscode-css-languageservice: 6.3.10
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.1.0
     optionalDependencies:
-      '@volar/language-service': 2.4.28(typescript@6.0.3)
+      '@volar/language-service': 2.4.28(typescript@7.0.2)
 
-  volar-service-emmet@0.0.71(@volar/language-service@2.4.28(typescript@6.0.3)):
+  volar-service-emmet@0.0.71(@volar/language-service@2.4.28(typescript@7.0.2)):
     dependencies:
       '@emmetio/css-parser': 0.4.1
       '@emmetio/html-matcher': 1.3.0
       '@vscode/emmet-helper': 2.11.0
       vscode-uri: 3.1.0
     optionalDependencies:
-      '@volar/language-service': 2.4.28(typescript@6.0.3)
+      '@volar/language-service': 2.4.28(typescript@7.0.2)
 
-  volar-service-html@0.0.71(@volar/language-service@2.4.28(typescript@6.0.3)):
+  volar-service-html@0.0.71(@volar/language-service@2.4.28(typescript@7.0.2)):
     dependencies:
       vscode-html-languageservice: 5.6.2
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.1.0
     optionalDependencies:
-      '@volar/language-service': 2.4.28(typescript@6.0.3)
+      '@volar/language-service': 2.4.28(typescript@7.0.2)
 
-  volar-service-prettier@0.0.71(@volar/language-service@2.4.28(typescript@6.0.3))(prettier@3.9.10):
+  volar-service-prettier@0.0.71(@volar/language-service@2.4.28(typescript@7.0.2))(prettier@3.9.10):
     dependencies:
-      vscode-uri: 2.1.0
+      vscode-uri: 3.2.0
     optionalDependencies:
-      '@volar/language-service': 2.4.28(typescript@6.0.3)
+      '@volar/language-service': 2.4.28(typescript@7.0.2)
       prettier: 3.9.10
 
-  volar-service-typescript-twoslash-queries@0.0.71(@volar/language-service@2.4.28(typescript@6.0.3))(typescript@6.0.3):
+  volar-service-typescript-twoslash-queries@0.0.71(@volar/language-service@2.4.28(typescript@7.0.2))(typescript@7.0.2):
     dependencies:
-      vscode-uri: 2.1.0
+      vscode-uri: 3.2.0
     optionalDependencies:
-      '@volar/language-service': 2.4.28(typescript@6.0.3)
-      typescript: 6.0.3
+      '@volar/language-service': 2.4.28(typescript@7.0.2)
+      typescript: 7.0.2
 
-  volar-service-typescript@0.0.71(@volar/language-service@2.4.28(typescript@6.0.3))(typescript@6.0.3):
+  volar-service-typescript@0.0.71(@volar/language-service@2.4.28(typescript@7.0.2))(typescript@7.0.2):
     dependencies:
       path-browserify: 1.0.1
-      semver: 8.8.5
+      semver: 7.8.5
       typescript-auto-import-cache: 0.3.6
       vscode-languageserver-textdocument: 1.0.12
       vscode-nls: 5.2.0
       vscode-uri: 3.1.0
     optionalDependencies:
-      '@volar/language-service': 2.4.28(typescript@6.0.3)
-      typescript: 6.0.3
+      '@volar/language-service': 2.4.28(typescript@7.0.2)
+      typescript: 7.0.2
 
-  volar-service-yaml@0.0.71(@volar/language-service@2.4.28(typescript@6.0.3)):
+  volar-service-yaml@0.0.71(@volar/language-service@2.4.28(typescript@7.0.2)):
     dependencies:
       vscode-uri: 3.1.0
       yaml-language-server: 1.23.0
     optionalDependencies:
-      '@volar/language-service': 2.4.28(typescript@6.0.3)
+      '@volar/language-service': 2.4.28(typescript@7.0.2)
 
   vscode-css-languageservice@6.3.10:
     dependencies:
@@ -5565,8 +5753,8 @@ snapshots:
     dependencies:
       '@vscode/l10n': 0.0.18
       vscode-languageserver-textdocument: 1.0.12
-      vscode-languageserver-types: 4.17.5
-      vscode-uri: 2.1.0
+      vscode-languageserver-types: 3.17.5
+      vscode-uri: 3.2.0
 
   vscode-json-languageservice@4.1.8:
     dependencies:
@@ -5574,7 +5762,7 @@ snapshots:
       vscode-languageserver-textdocument: 1.0.12
       vscode-languageserver-types: 3.17.5
       vscode-nls: 5.2.0
-      vscode-uri: 3.1.0
+      vscode-uri: 3.2.0
 
   vscode-jsonrpc@8.2.0: {}
 
@@ -5599,20 +5787,20 @@ snapshots:
 
   which@2.0.2:
     dependencies:
-      isexe: 1.0.0
+      isexe: 2.0.0
 
   word-wrap@1.2.5: {}
 
   wrap-ansi@6.2.0:
     dependencies:
       ansi-styles: 4.3.0
-      string-width: 5.2.3
+      string-width: 4.2.3
       strip-ansi: 6.0.1
 
   wrap-ansi@9.0.2:
     dependencies:
-      ansi-styles: 5.2.3
-      string-width: 6.2.0
+      ansi-styles: 6.2.3
+      string-width: 7.2.0
       strip-ansi: 7.2.0
 
   xxhash-wasm@1.1.0: {}
@@ -5625,8 +5813,8 @@ snapshots:
     dependencies:
       '@vscode/l10n': 0.0.18
       ajv: 8.20.0
-      ajv-draft-04: 0.0.0(ajv@8.20.0)
-      ajv-i18n: 3.2.0(ajv@8.20.0)
+      ajv-draft-04: 1.0.0(ajv@8.20.0)
+      ajv-i18n: 4.2.0(ajv@8.20.0)
       prettier: 3.9.10
       request-light: 0.5.8
       vscode-json-languageservice: 4.1.8
@@ -5659,7 +5847,7 @@ snapshots:
 
   zod-validation-error@4.0.2(zod@4.6.7):
     dependencies:
-      zod: 5.6.7
+      zod: 4.6.7
 
   zod@4.6.7: {}
 
